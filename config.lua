@@ -1,7 +1,7 @@
 Config = {}
 Config.UseTruckerJob = false -- true = The shops stock is based on when truckers refill it | false = shop inventory never runs out
 Config.UseTarget = GetConvar('UseTarget', 'false') == 'true' -- Use qb-target interactions (don't change this, go to your server.cfg and add `setr UseTarget true` to use this and just that from true to false or the other way around)
-Config.FirearmsLicenseCheck = false -- Whether a arms dealer checks for a firearms license
+Config.FirearmsLicenseCheck = true -- Whether a arms dealer checks for a firearms license
 Config.ShopsInvJsonFile = './json/shops-inventory.json' -- json file location
 Config.SellCasinoChips = {
     coords = vector4(950.37, 34.72, 71.87, 33.82),
@@ -447,7 +447,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipscale"] = 0.6,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 2,
         ["delivery"] = vector4(26.45, -1315.51, 29.62, 0.07)
     },
 
@@ -463,7 +463,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipscale"] = 0.6,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 2,
         ["delivery"] = vector4(-3047.95, 590.71, 7.62, 19.53)
     },
 
@@ -479,7 +479,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipscale"] = 0.6,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 2,
         ["delivery"] = vector4(-3245.76, 1005.25, 12.83, 269.45)
     },
 
@@ -511,7 +511,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipscale"] = 0.6,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 2,
         ["delivery"] = vector4(1963.81, 3750.09, 32.26, 302.46)
     },
 
@@ -527,7 +527,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipscale"] = 0.6,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 2,
         ["delivery"] = vector4(541.54, 2663.53, 42.17, 120.51)
     },
 
@@ -543,7 +543,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipscale"] = 0.6,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 2,
         ["delivery"] = vector4(2662.19, 3264.95, 55.24, 168.55)
     },
 
@@ -559,7 +559,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipscale"] = 0.6,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 2,
         ["delivery"] = vector4(2553.24, 399.73, 108.56, 344.86)
     },
 
@@ -575,7 +575,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipscale"] = 0.6,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 2,
         ["delivery"] = vector4(379.97, 357.3, 102.56, 26.42)
     },
 
@@ -592,7 +592,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipscale"] = 0.6,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 2,
         ["delivery"] = vector4(-40.51, -1747.45, 29.29, 326.39)
     },
 
@@ -608,7 +608,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipscale"] = 0.6,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 2,
         ["delivery"] = vector4(-702.89, -917.44, 19.21, 181.96)
     },
 
@@ -624,7 +624,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipscale"] = 0.6,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 2,
         ["delivery"] = vector4(-1829.29, 801.49, 138.41, 41.39)
     },
 
@@ -640,7 +640,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipscale"] = 0.6,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 2,
         ["delivery"] = vector4(1160.62, -312.06, 69.28, 3.77)
     },
 
@@ -656,7 +656,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipscale"] = 0.6,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 2,
         ["delivery"] = vector4(1702.68, 4917.28, 42.22, 139.27)
     },
 
@@ -673,7 +673,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipscale"] = 0.6,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 2,
         ["delivery"] = vector4(-1226.92, -901.82, 12.28, 213.26)
     },
 
@@ -689,7 +689,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipscale"] = 0.6,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 2,
         ["delivery"] = vector4(-1468.29, -387.61, 38.79, 220.13)
     },
 
@@ -705,7 +705,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipscale"] = 0.6,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 2,
         ["delivery"] = vector4(-2961.49, 376.25, 15.02, 111.41)
     },
 
@@ -721,7 +721,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipscale"] = 0.6,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 2,
         ["delivery"] = vector4(1194.52, 2722.21, 38.62, 9.37)
     },
 
@@ -737,7 +737,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipscale"] = 0.6,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 2,
         ["delivery"] = vector4(1129.73, -989.27, 45.97, 280.98)
     },
 
@@ -754,7 +754,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 402,
         ["blipscale"] = 0.8,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 44,
         ["delivery"] = vector4(89.15, -1745.29, 30.09, 315.25)
     },
 
@@ -770,7 +770,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 402,
         ["blipscale"] = 0.8,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 44,
         ["delivery"] = vector4(2704.68, 3457.21, 55.54, 176.28)
     },
 
@@ -786,7 +786,7 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 402,
         ["blipscale"] = 0.8,
-        ["blipcolor"] = 0,
+        ["blipcolor"] = 44,
         ["delivery"] = vector4(-438.25, 6146.9, 31.48, 136.99)
     },
 
