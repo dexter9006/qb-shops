@@ -83,9 +83,9 @@ Config.Products = {
             slot = 9,
         },
         [10] = {
-            name = "bandage",
+            name = "cleaningkit",
             price = 100,
-            amount = 50,
+            amount = 20,
             info = {},
             type = "item",
             slot = 10,
