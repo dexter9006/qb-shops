@@ -432,6 +432,162 @@ Config.Products = {
             slot = 1,
         }
     },
+    -- Vitto
+    ["petshop"] = {
+        [1] = {
+            name = 'keepcompanionwesty',
+            price = 50000,
+            amount = 5,
+            info = {},
+            type = 'item',
+            slot = 1
+        },
+        [2] = {
+            name = 'keepcompanionshepherd',
+            price = 150000,
+            amount = 5,
+            info = {},
+            type = 'item',
+            slot = 2
+        },
+        [3] = {
+            name = 'keepcompanionretriever',
+            price = 50000,
+            amount = 5,
+            info = {},
+            type = 'item',
+            slot = 3
+        },
+        [4] = {
+            name = 'keepcompanionrottweiler',
+            price = 75000,
+            amount = 5,
+            info = {},
+            type = 'item',
+            slot = 4
+        },
+        [5] = {
+            name = 'keepcompanionpug',
+            price = 95000,
+            amount = 5,
+            info = {},
+            type = 'item',
+            slot = 5
+        },
+        [6] = {
+            name = 'keepcompanionpoodle',
+            price = 50000,
+            amount = 5,
+            info = {},
+            type = 'item',
+            slot = 6
+        },
+
+        [7] = {
+            name = 'keepcompanionmtlion2',
+            price = 50000,
+            amount = 5,
+            info = {},
+            type = 'item',
+            slot = 7
+        },
+        [8] = {
+            name = 'keepcompanioncat',
+            price = 50000,
+            amount = 5,
+            info = {},
+            type = 'item',
+            slot = 8
+        },
+        [9] = {
+            name = 'keepcompanionmtlion',
+            price = 50000,
+            amount = 5,
+            info = {},
+            type = 'item',
+            slot = 9
+        },
+        [10] = {
+            name = 'keepcompanionhusky',
+            price = 50000,
+            amount = 5,
+            info = {},
+            type = 'item',
+            slot = 10
+        },
+        [11] = {
+            name = 'petfood',
+            price = 500,
+            amount = 1000,
+            info = {},
+            type = 'item',
+            slot = 11
+        },
+        [12] = {
+            name = 'collarpet',
+            price = 50000,
+            amount = 50,
+            info = {},
+            type = 'item',
+            slot = 12
+        },
+        [13] = {
+            name = 'firstaidforpet',
+            price = 5000,
+            amount = 50,
+            info = {},
+            type = 'item',
+            slot = 13
+        },
+        [14] = {
+            name = 'petnametag',
+            price = 5000,
+            amount = 50,
+            info = {},
+            type = 'item',
+            slot = 14
+        },
+        [15] = {
+            name = 'petwaterbottleportable',
+            price = 5000,
+            amount = 50,
+            info = {},
+            type = 'item',
+            slot = 15
+        },
+        [16] = {
+            name = 'petgroomingkit',
+            price = 5000,
+            amount = 50,
+            info = {},
+            type = 'item',
+            slot = 16
+        },
+        [17] = {
+            name = 'keepcompanionrabbit',
+            price = 15000,
+            amount = 50,
+            info = {},
+            type = 'item',
+            slot = 17
+        },
+        [18] = {
+            name = 'keepcompanionhen',
+            price = 5000,
+            amount = 50,
+            info = {},
+            type = 'item',
+            slot = 18
+        },
+        [19] = {
+            name = 'keepcompanioncoyote',
+            price = 50000,
+            amount = 50,
+            info = {},
+            type = 'item',
+            slot = 19
+        },
+    }
 }
 Config.Locations = {
     -- 24/7 Locations
@@ -1050,5 +1206,19 @@ Config.Locations = {
         ["blipscale"] = 0.8,
         ["blipcolor"] = 0,
         ["delivery"] = vector4(-1507.64, 1505.52, 115.29, 262.2)
+    },
+    -- Vitto
+    ["petshop"] = {
+        ["label"] = "Pet Shop",
+        ["coords"] = vector4(561.18, 2741.51, 42.87, 199.08), --or vector4(-659.87, -936.46, 21.83, 130.04), --  for mlo https://www.gta5-mods.com/maps/
+        ["ped"] = 'S_M_M_StrVend_01',
+        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
+        ["radius"] = 1.5,
+        ["targetIcon"] = "fas fa-paw",
+        ["targetLabel"] = "Open Pet Shop",
+        ["products"] = Config.Products["petshop"],
+        ["showblip"] = true,
+        ["blipsprite"] = 267,
+        ["blipcolor"] = 5
     },
 }
