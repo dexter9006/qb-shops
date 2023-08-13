@@ -155,6 +155,7 @@ local function createPeds()
         end
     end
 
+--[[
     local current = type(Config.SellCasinoChips.ped) == 'number' and Config.SellCasinoChips.ped or joaat(Config.SellCasinoChips.ped)
 
     RequestModel(current)
@@ -181,7 +182,7 @@ local function createPeds()
             distance = 2.0
         })
     end
-
+--]]
     pedSpawned = true
 end
 
