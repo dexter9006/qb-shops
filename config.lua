@@ -3,11 +3,13 @@ Config.UseTruckerJob = true -- true = The shops stock is based on when truckers 
 Config.UseTarget = GetConvar('UseTarget', 'false') == 'true' -- Use qb-target interactions (don't change this, go to your server.cfg and add `setr UseTarget true` to use this and just that from true to false or the other way around)
 Config.FirearmsLicenseCheck = true -- Whether a arms dealer checks for a firearms license
 Config.ShopsInvJsonFile = './json/shops-inventory.json' -- json file location
+--[[
 Config.SellCasinoChips = {
     coords = vector4(977.81, 37.87, 74.88, 98.67),
     radius = 1.5,
     ped = 's_m_y_casino_01'
 }
+--]]
 Config.Products = {
     ["normal"] = {
         [1] = {
@@ -67,76 +69,60 @@ Config.Products = {
             slot = 7,
         },
         [8] = {
-            name = "whiskey",
-            price = 10,
-            amount = 50,
+            name = "cleaningkit",
+            price = 100,
+            amount = 20,
             info = {},
             type = "item",
             slot = 8,
         },
         [9] = {
-            name = "vodka",
-            price = 12,
+            name = "lighter",
+            price = 2,
             amount = 50,
             info = {},
             type = "item",
             slot = 9,
         },
         [10] = {
-            name = "cleaningkit",
-            price = 100,
-            amount = 20,
+            name = "rolling_paper",
+            price = 2,
+            amount = 5000,
             info = {},
             type = "item",
             slot = 10,
         },
         [11] = {
-            name = "lighter",
-            price = 2,
+            name = "weapon_poolcue",
+            price = 100,
             amount = 50,
             info = {},
             type = "item",
             slot = 11,
         },
         [12] = {
-            name = "rolling_paper",
-            price = 2,
-            amount = 5000,
-            info = {},
-            type = "item",
-            slot = 12,
-        },
-        [13] = {
-            name = "weapon_poolcue",
-            price = 100,
-            amount = 50,
-            info = {},
-            type = "item",
-            slot = 2,
-        },
-        [14] = {
             name = "weed_nutrition",
             price = 20,
             amount = 50,
             info = {},
             type = "item",
-            slot = 3,
+            slot = 12,
         },
-        [15] = {
+        [13] = {
             name = "empty_weed_bag",
             price = 5,
             amount = 1000,
             info = {},
             type = "item",
-            slot = 4,
+            slot = 13,
         },
-        [16] = {
+        [14] = {
             name = "plant_tub",
             price = 5,
             amount = 1000,
             info = {},
             type = "item",
-            slot = 4,
+            slot = 14,
         },
     },
     ["liquor"] = {
@@ -167,15 +153,15 @@ Config.Products = {
     },
     ["hardware"] = {
         [1] = {
-            name = "lockpick",
-            price = 200,
-            amount = 50,
+            name = "weapon_wrench",
+            price = 250,
+            amount = 250,
             info = {},
             type = "item",
             slot = 1,
         },
         [2] = {
-            name = "weapon_wrench",
+            name = "weapon_hammer",
             price = 250,
             amount = 250,
             info = {},
@@ -183,48 +169,48 @@ Config.Products = {
             slot = 2,
         },
         [3] = {
-            name = "weapon_hammer",
-            price = 250,
-            amount = 250,
-            info = {},
-            type = "item",
-            slot = 3,
-        },
-        [4] = {
             name = "repairkit",
             price = 250,
             amount = 50,
             info = {},
             type = "item",
-            slot = 4,
+            slot = 3,
             requiredJob = { "mechanic", "police" }
         },
-        [5] = {
+        [4] = {
             name = "screwdriverset",
             price = 350,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 4,
+        },
+        [5] = {
+            name = "phone",
+            price = 850,
             amount = 50,
             info = {},
             type = "item",
             slot = 5,
         },
         [6] = {
-            name = "phone",
-            price = 850,
+            name = "radio",
+            price = 250,
             amount = 50,
             info = {},
             type = "item",
             slot = 6,
         },
         [7] = {
-            name = "radio",
-            price = 250,
+            name = "binoculars",
+            price = 50,
             amount = 50,
             info = {},
             type = "item",
             slot = 7,
         },
         [8] = {
-            name = "binoculars",
+            name = "firework1",
             price = 50,
             amount = 50,
             info = {},
@@ -232,7 +218,7 @@ Config.Products = {
             slot = 8,
         },
         [9] = {
-            name = "firework1",
+            name = "firework2",
             price = 50,
             amount = 50,
             info = {},
@@ -240,7 +226,7 @@ Config.Products = {
             slot = 9,
         },
         [10] = {
-            name = "firework2",
+            name = "firework3",
             price = 50,
             amount = 50,
             info = {},
@@ -248,7 +234,7 @@ Config.Products = {
             slot = 10,
         },
         [11] = {
-            name = "firework3",
+            name = "firework4",
             price = 50,
             amount = 50,
             info = {},
@@ -256,36 +242,28 @@ Config.Products = {
             slot = 11,
         },
         [12] = {
-            name = "firework4",
-            price = 50,
-            amount = 50,
+            name = "fitbit",
+            price = 400,
+            amount = 150,
             info = {},
             type = "item",
             slot = 12,
         },
         [13] = {
-            name = "fitbit",
-            price = 400,
+            name = "cleaningkit",
+            price = 150,
             amount = 150,
             info = {},
             type = "item",
             slot = 13,
         },
         [14] = {
-            name = "cleaningkit",
-            price = 150,
-            amount = 150,
-            info = {},
-            type = "item",
-            slot = 14,
-        },
-        [15] = {
             name = "advancedrepairkit",
             price = 500,
             amount = 50,
             info = {},
             type = "item",
-            slot = 15,
+            slot = 14,
             requiredJob = { "mechanic" }
         },
     },
@@ -394,6 +372,8 @@ Config.Products = {
             requiresLicense = true
         },
     },
+
+    --[[
     ["casino"] = {
         [1] = {
             name = 'casinochips',
@@ -404,6 +384,8 @@ Config.Products = {
             slot = 1,
         }
     },
+    --]]
+
     -- Vitto
     ["petshop"] = {
         [1] = {
@@ -578,7 +560,6 @@ Config.Locations = {
         ["blipcolor"] = 2,
         ["delivery"] = vector4(26.45, -1315.51, 29.62, 0.07)
     },
-
     ["247supermarket2"] = {
         ["label"] = "Magasin - Superette 24/7",
         ["coords"] = vector4(-3039.54, 584.38, 7.91, 17.27),
@@ -594,7 +575,6 @@ Config.Locations = {
         ["blipcolor"] = 2,
         ["delivery"] = vector4(-3047.95, 590.71, 7.62, 19.53)
     },
-
     ["247supermarket3"] = {
         ["label"] = "Magasin - Superette 24/7",
         ["coords"] = vector4(-3242.97, 1000.01, 12.83, 357.57),
@@ -610,7 +590,6 @@ Config.Locations = {
         ["blipcolor"] = 2,
         ["delivery"] = vector4(-3245.76, 1005.25, 12.83, 269.45)
     },
-
     ["247supermarket4"] = {
         ["label"] = "Magasin - Superette 24/7",
         ["coords"] = vector4(1728.07, 6415.63, 35.04, 242.95),
@@ -626,7 +605,6 @@ Config.Locations = {
         ["blipcolor"] = 2,
         ["delivery"] = vector4(1741.76, 6419.61, 35.04, 6.83)
     },
-
     ["247supermarket5"] = {
         ["label"] = "Magasin - Superette 24/7",
         ["coords"] = vector4(1959.82, 3740.48, 32.34, 301.57),
@@ -642,7 +620,6 @@ Config.Locations = {
         ["blipcolor"] = 2,
         ["delivery"] = vector4(1963.81, 3750.09, 32.26, 302.46)
     },
-
     ["247supermarket6"] = {
         ["label"] = "Magasin - Superette 24/7",
         ["coords"] = vector4(549.13, 2670.85, 42.16, 99.39),
@@ -658,7 +635,6 @@ Config.Locations = {
         ["blipcolor"] = 2,
         ["delivery"] = vector4(541.54, 2663.53, 42.17, 120.51)
     },
-
     ["247supermarket7"] = {
         ["label"] = "Magasin - Superette 24/7",
         ["coords"] = vector4(2677.47, 3279.76, 55.24, 335.08),
@@ -674,7 +650,6 @@ Config.Locations = {
         ["blipcolor"] = 2,
         ["delivery"] = vector4(2662.19, 3264.95, 55.24, 168.55)
     },
-
     ["247supermarket8"] = {
         ["label"] = "Magasin - Superette 24/7",
         ["coords"] = vector4(2556.66, 380.84, 108.62, 356.67),
@@ -690,7 +665,6 @@ Config.Locations = {
         ["blipcolor"] = 2,
         ["delivery"] = vector4(2553.24, 399.73, 108.56, 344.86)
     },
-
     ["247supermarket9"] = {
         ["label"] = "Magasin - Superette 24/7",
         ["coords"] = vector4(372.66, 326.98, 103.57, 253.73),
@@ -723,7 +697,6 @@ Config.Locations = {
         ["blipcolor"] = 2,
         ["delivery"] = vector4(-40.51, -1747.45, 29.29, 326.39)
     },
-
     ["ltdgasoline2"] = {
         ["label"] = "Magasin - LTD Gasoline",
         ["coords"] = vector4(-706.06, -913.97, 19.22, 88.04),
@@ -739,7 +712,6 @@ Config.Locations = {
         ["blipcolor"] = 2,
         ["delivery"] = vector4(-702.89, -917.44, 19.21, 181.96)
     },
-
     ["ltdgasoline3"] = {
         ["label"] = "Magasin - LTD Gasoline",
         ["coords"] = vector4(-1820.02, 794.03, 138.09, 135.45),
@@ -755,7 +727,6 @@ Config.Locations = {
         ["blipcolor"] = 2,
         ["delivery"] = vector4(-1829.29, 801.49, 138.41, 41.39)
     },
-
     ["ltdgasoline4"] = {
         ["label"] = "Magasin - LTD Gasoline",
         ["coords"] = vector4(1164.71, -322.94, 69.21, 101.72),
@@ -771,7 +742,6 @@ Config.Locations = {
         ["blipcolor"] = 2,
         ["delivery"] = vector4(1160.62, -312.06, 69.28, 3.77)
     },
-
     ["ltdgasoline5"] = {
         ["label"] = "Magasin - LTD Gasoline",
         ["coords"] = vector4(1697.87, 4922.96, 42.06, 324.71),
@@ -804,7 +774,6 @@ Config.Locations = {
         ["blipcolor"] = 2,
         ["delivery"] = vector4(-1226.92, -901.82, 12.28, 213.26)
     },
-
     ["robsliquor2"] = {
         ["label"] = "Magasin - Rob's Liqueur",
         ["coords"] = vector4(-1486.59, -377.68, 40.16, 139.51),
@@ -820,7 +789,6 @@ Config.Locations = {
         ["blipcolor"] = 2,
         ["delivery"] = vector4(-1468.29, -387.61, 38.79, 220.13)
     },
-
     ["robsliquor3"] = {
         ["label"] = "Magasin - Rob's Liqueur",
         ["coords"] = vector4(-2966.39, 391.42, 15.04, 87.48),
@@ -836,7 +804,6 @@ Config.Locations = {
         ["blipcolor"] = 2,
         ["delivery"] = vector4(-2961.49, 376.25, 15.02, 111.41)
     },
-
     ["robsliquor4"] = {
         ["label"] = "Magasin - Rob's Liqueur",
         ["coords"] = vector4(1165.17, 2710.88, 38.16, 179.43),
@@ -852,7 +819,6 @@ Config.Locations = {
         ["blipcolor"] = 2,
         ["delivery"] = vector4(1194.52, 2722.21, 38.62, 9.37)
     },
-
     ["robsliquor5"] = {
         ["label"] = "Magasin - Rob's Liqueur",
         ["coords"] = vector4(1134.2, -982.91, 46.42, 277.24),
@@ -885,7 +851,6 @@ Config.Locations = {
         ["blipcolor"] = 44,
         ["delivery"] = vector4(89.15, -1745.29, 30.09, 315.25)
     },
-
     ["hardware2"] = {
         ["label"] = "Magasin - Quincaillerie",
         ["coords"] = vector4(2747.71, 3472.85, 55.67, 255.08),
@@ -901,7 +866,6 @@ Config.Locations = {
         ["blipcolor"] = 44,
         ["delivery"] = vector4(2704.68, 3457.21, 55.54, 176.28)
     },
-
     ["hardware3"] = {
         ["label"] = "Magasin - Quincaillerie",
         ["coords"] = vector4(-421.83, 6136.13, 31.88, 228.2),
@@ -1097,6 +1061,7 @@ Config.Locations = {
     },
 
     -- Casino Locations
+    --[[
     ["casino"] = {
         ["label"] = "Divertissement - Diamond Casino",
         ["coords"] = vector4(978.46, 39.07, 74.88, 64.0),
@@ -1112,10 +1077,10 @@ Config.Locations = {
         ["blipcolor"] = 0,
         ["delivery"] = vector4(972.6, 9.22, 81.04, 233.38)
     },
-
+    --]]
     ["casinobar"] = {
-        ["label"] = "Divertissement - Casino Bar",
-        ["coords"] = vector4(968.13, 29.85, 74.88, 208.86),
+        ["label"] = "Divertissement - Bar Casino",
+        ["coords"] = vector4(937.21, 25.43, 71.85, 114.92),
         ["ped"] = 'a_m_y_smartcaspat_01',
         ["scenario"] = "WORLD_HUMAN_VALET",
         ["radius"] = 1.5,
@@ -1128,15 +1093,16 @@ Config.Locations = {
         ["blipcolor"] = 0,
         ["delivery"] = vector4(937.16, 1.0, 78.76, 152.4)
     },
+    
     -- Leisure Shop Locations
     ["leisureshop"] = {
-        ["label"] = "Leisure Shop",
-        ["coords"] = vector4(-1505.91, 1511.95, 115.29, 257.13),
+        ["label"] = "Magasin - Boutique Loisirs",
+        ["coords"] = vector4(-1687.03, -1072.18, 13.15, 52.93),
         ["ped"] = 'a_m_y_beach_01',
         ["scenario"] = "WORLD_HUMAN_STAND_MOBILE_CLUBHOUSE",
         ["radius"] = 1.5,
         ["targetIcon"] = "fas fa-leaf",
-        ["targetLabel"] = "Open Leisure Shop",
+        ["targetLabel"] = "Ouvrir la Boutique de Loisir",
         ["products"] = Config.Products["leisureshop"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
@@ -1144,6 +1110,7 @@ Config.Locations = {
         ["blipcolor"] = 0,
         ["delivery"] = vector4(-1507.64, 1505.52, 115.29, 262.2)
     },
+
     -- Vitto
     ["petshop"] = {
         ["label"] = "Magasin - Animal Ark",
